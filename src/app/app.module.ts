@@ -10,6 +10,8 @@ import { HeaderComponent } from './header/header.component';
 import { RegComponent } from './reg/reg.component';
 import { AuthComponent } from './auth/auth.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { AuthService } from './auth.service';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -25,8 +27,11 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AppRoutingModule,
     FormsModule,
     // FlashMessagesModule.forRoot()
+    HttpModule
   ],
-  providers: [],
+  providers: [
+    AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
