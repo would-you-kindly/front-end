@@ -8,6 +8,7 @@ import { AuthService } from '../auth.service';
 })
 export class HomeComponent implements OnInit {
   posts = [];
+  category;
 
   constructor(private authService: AuthService) {}
 
@@ -25,5 +26,9 @@ export class HomeComponent implements OnInit {
       }
       // console.log(posts);
     );
+  }
+
+  setCategory(category) {
+    this.category = category;
   }
 }
