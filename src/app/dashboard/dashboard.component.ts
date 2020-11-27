@@ -68,7 +68,7 @@ export class DashboardComponent implements OnInit {
         //   cssClass: 'alert-success',
         //   timeout: 1000,
         // });
-        this.router.navigate(['/']);
+        this.router.navigate(['/'])
       }
     });
 
